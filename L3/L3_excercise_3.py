@@ -19,3 +19,5 @@ x = recipies.drop(["rating"], axis=1)
 x_train_all, x_test, y_train_all, y_test = train_test_split(
     x.values, y.values, train_size=0.7, random_state=42
 )
+
+print("Training set size:", x_train_all.shape[0])
